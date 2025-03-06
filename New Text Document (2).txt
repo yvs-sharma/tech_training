@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+void Guesss()
+{
+    srand(time(NULL));
+    int r = rand()%100 , guess;
+    printf("Guess the number between 0 to 99 \n");
+    
+    while(1)
+    {
+        printf("Enter the guess : ");
+        scanf("%d",&guess);
+        if(guess == r)
+        {
+            printf("You won , the number was %d",r);
+            break;
+        }
+        else if (guess < r)
+        printf("guess a greater number \n");
+        
+        else
+        printf("guess a lesser number \n");
+    }
+}
+int main() 
+{
+    Guesss();
+}
