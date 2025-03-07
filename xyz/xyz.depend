@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1741236082 source:d:\sumukha\xyz\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
